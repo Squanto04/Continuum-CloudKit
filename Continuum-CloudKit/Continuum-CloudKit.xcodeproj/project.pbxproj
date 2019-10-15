@@ -1,0 +1,373 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35E6595D2356560F00AFB66C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E6595C2356560F00AFB66C /* AppDelegate.swift */; };
+		35E659622356560F00AFB66C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35E659602356560F00AFB66C /* Main.storyboard */; };
+		35E659642356561000AFB66C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35E659632356561000AFB66C /* Assets.xcassets */; };
+		35E659672356561000AFB66C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35E659652356561000AFB66C /* LaunchScreen.storyboard */; };
+		35E659722356578900AFB66C /* PostListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E659712356578900AFB66C /* PostListTableViewController.swift */; };
+		35E659742356581C00AFB66C /* PostDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E659732356581C00AFB66C /* PostDetailTableViewController.swift */; };
+		35E659762356589B00AFB66C /* AddPostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E659752356589B00AFB66C /* AddPostTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		35E659592356560F00AFB66C /* Continuum-CloudKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Continuum-CloudKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		35E6595C2356560F00AFB66C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		35E659612356560F00AFB66C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		35E659632356561000AFB66C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		35E659662356561000AFB66C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		35E659682356561000AFB66C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35E659712356578900AFB66C /* PostListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListTableViewController.swift; sourceTree = "<group>"; };
+		35E659732356581C00AFB66C /* PostDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailTableViewController.swift; sourceTree = "<group>"; };
+		35E659752356589B00AFB66C /* AddPostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35E659562356560F00AFB66C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35E659502356560E00AFB66C = {
+			isa = PBXGroup;
+			children = (
+				35E6595B2356560F00AFB66C /* Continuum-CloudKit */,
+				35E6595A2356560F00AFB66C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		35E6595A2356560F00AFB66C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35E659592356560F00AFB66C /* Continuum-CloudKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35E6595B2356560F00AFB66C /* Continuum-CloudKit */ = {
+			isa = PBXGroup;
+			children = (
+				35E659702356577900AFB66C /* View Controllers */,
+				35E6596F2356565800AFB66C /* Views */,
+				35E6596E2356564900AFB66C /* Resources */,
+			);
+			path = "Continuum-CloudKit";
+			sourceTree = "<group>";
+		};
+		35E6596E2356564900AFB66C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				35E6595C2356560F00AFB66C /* AppDelegate.swift */,
+				35E659632356561000AFB66C /* Assets.xcassets */,
+				35E659652356561000AFB66C /* LaunchScreen.storyboard */,
+				35E659682356561000AFB66C /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		35E6596F2356565800AFB66C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				35E659602356560F00AFB66C /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		35E659702356577900AFB66C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				35E659712356578900AFB66C /* PostListTableViewController.swift */,
+				35E659732356581C00AFB66C /* PostDetailTableViewController.swift */,
+				35E659752356589B00AFB66C /* AddPostTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		35E659582356560F00AFB66C /* Continuum-CloudKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35E6596B2356561000AFB66C /* Build configuration list for PBXNativeTarget "Continuum-CloudKit" */;
+			buildPhases = (
+				35E659552356560F00AFB66C /* Sources */,
+				35E659562356560F00AFB66C /* Frameworks */,
+				35E659572356560F00AFB66C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Continuum-CloudKit";
+			productName = "Continuum-CloudKit";
+			productReference = 35E659592356560F00AFB66C /* Continuum-CloudKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35E659512356560E00AFB66C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Squanto Inc";
+				TargetAttributes = {
+					35E659582356560F00AFB66C = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 35E659542356560E00AFB66C /* Build configuration list for PBXProject "Continuum-CloudKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 35E659502356560E00AFB66C;
+			productRefGroup = 35E6595A2356560F00AFB66C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				35E659582356560F00AFB66C /* Continuum-CloudKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35E659572356560F00AFB66C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35E659672356561000AFB66C /* LaunchScreen.storyboard in Resources */,
+				35E659642356561000AFB66C /* Assets.xcassets in Resources */,
+				35E659622356560F00AFB66C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35E659552356560F00AFB66C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35E6595D2356560F00AFB66C /* AppDelegate.swift in Sources */,
+				35E659722356578900AFB66C /* PostListTableViewController.swift in Sources */,
+				35E659762356589B00AFB66C /* AddPostTableViewController.swift in Sources */,
+				35E659742356581C00AFB66C /* PostDetailTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		35E659602356560F00AFB66C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35E659612356560F00AFB66C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		35E659652356561000AFB66C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35E659662356561000AFB66C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		35E659692356561000AFB66C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		35E6596A2356561000AFB66C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		35E6596C2356561000AFB66C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EANQJ7L949;
+				INFOPLIST_FILE = "$(SRCROOT)/Continuum-CloudKit/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.squantoinc.Continuum-CloudKit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		35E6596D2356561000AFB66C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EANQJ7L949;
+				INFOPLIST_FILE = "$(SRCROOT)/Continuum-CloudKit/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.squantoinc.Continuum-CloudKit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35E659542356560E00AFB66C /* Build configuration list for PBXProject "Continuum-CloudKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35E659692356561000AFB66C /* Debug */,
+				35E6596A2356561000AFB66C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35E6596B2356561000AFB66C /* Build configuration list for PBXNativeTarget "Continuum-CloudKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35E6596C2356561000AFB66C /* Debug */,
+				35E6596D2356561000AFB66C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 35E659512356560E00AFB66C /* Project object */;
+}
