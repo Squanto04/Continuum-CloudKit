@@ -16,6 +16,7 @@
 		35E659762356589B00AFB66C /* AddPostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E659752356589B00AFB66C /* AddPostTableViewController.swift */; };
 		35E659792356595900AFB66C /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E659782356595900AFB66C /* Post.swift */; };
 		35E6597B23565ACB00AFB66C /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E6597A23565ACB00AFB66C /* Comment.swift */; };
+		35E6598023565BD800AFB66C /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E6597F23565BD800AFB66C /* PostController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		35E659752356589B00AFB66C /* AddPostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostTableViewController.swift; sourceTree = "<group>"; };
 		35E659782356595900AFB66C /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		35E6597A23565ACB00AFB66C /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		35E6597F23565BD800AFB66C /* PostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				35E659772356594000AFB66C /* Models */,
+				35E6597C23565BB700AFB66C /* Model Controllers */,
 				35E659702356577900AFB66C /* View Controllers */,
 				35E6596F2356565800AFB66C /* Views */,
 				35E6596E2356564900AFB66C /* Resources */,
@@ -106,6 +109,14 @@
 				35E6597A23565ACB00AFB66C /* Comment.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		35E6597C23565BB700AFB66C /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				35E6597F23565BD800AFB66C /* PostController.swift */,
+			);
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +194,7 @@
 				35E6597B23565ACB00AFB66C /* Comment.swift in Sources */,
 				35E659722356578900AFB66C /* PostListTableViewController.swift in Sources */,
 				35E659762356589B00AFB66C /* AddPostTableViewController.swift in Sources */,
+				35E6598023565BD800AFB66C /* PostController.swift in Sources */,
 				35E659742356581C00AFB66C /* PostDetailTableViewController.swift in Sources */,
 				35E659792356595900AFB66C /* Post.swift in Sources */,
 			);
