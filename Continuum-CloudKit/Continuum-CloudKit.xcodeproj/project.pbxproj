@@ -17,6 +17,8 @@
 		35E659792356595900AFB66C /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E659782356595900AFB66C /* Post.swift */; };
 		35E6597B23565ACB00AFB66C /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E6597A23565ACB00AFB66C /* Comment.swift */; };
 		35E6598023565BD800AFB66C /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E6597F23565BD800AFB66C /* PostController.swift */; };
+		35E6598423565F5800AFB66C /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E6598323565F5800AFB66C /* PostTableViewCell.swift */; };
+		35E6598623566A6E00AFB66C /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E6598523566A6E00AFB66C /* DateExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		35E659782356595900AFB66C /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		35E6597A23565ACB00AFB66C /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		35E6597F23565BD800AFB66C /* PostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostController.swift; sourceTree = "<group>"; };
+		35E6598323565F5800AFB66C /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		35E6598523566A6E00AFB66C /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 				35E6597C23565BB700AFB66C /* Model Controllers */,
 				35E659702356577900AFB66C /* View Controllers */,
 				35E6596F2356565800AFB66C /* Views */,
+				35E6598723566A8500AFB66C /* Helpers */,
 				35E6596E2356564900AFB66C /* Resources */,
 			);
 			path = "Continuum-CloudKit";
@@ -88,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				35E659602356560F00AFB66C /* Main.storyboard */,
+				35E6598323565F5800AFB66C /* PostTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -117,6 +123,14 @@
 				35E6597F23565BD800AFB66C /* PostController.swift */,
 			);
 			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		35E6598723566A8500AFB66C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				35E6598523566A6E00AFB66C /* DateExtension.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,9 +207,11 @@
 				35E6595D2356560F00AFB66C /* AppDelegate.swift in Sources */,
 				35E6597B23565ACB00AFB66C /* Comment.swift in Sources */,
 				35E659722356578900AFB66C /* PostListTableViewController.swift in Sources */,
+				35E6598423565F5800AFB66C /* PostTableViewCell.swift in Sources */,
 				35E659762356589B00AFB66C /* AddPostTableViewController.swift in Sources */,
 				35E6598023565BD800AFB66C /* PostController.swift in Sources */,
 				35E659742356581C00AFB66C /* PostDetailTableViewController.swift in Sources */,
+				35E6598623566A6E00AFB66C /* DateExtension.swift in Sources */,
 				35E659792356595900AFB66C /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
