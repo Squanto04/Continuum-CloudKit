@@ -12,6 +12,13 @@ class PostListTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.rowHeight = 465
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+        tableView.tableFooterView = UIView()
     }
 
     // MARK: - Table view data source

@@ -14,6 +14,7 @@ class PostDetailTableViewController: UITableViewController {
     // MARK: - Properties
     var post: Post?{
         didSet {
+            loadViewIfNeeded()
             updateViews()
         }
     }
@@ -75,6 +76,7 @@ class PostDetailTableViewController: UITableViewController {
                     self.tableView.reloadData()
                 }
             })
+            self.tableView.reloadData()
         }
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
@@ -93,9 +95,8 @@ class PostDetailTableViewController: UITableViewController {
     
     private func updateViews() {
         guard let post = post else { return }
-        DispatchQueue.main.async {
-            self.postImageView.image = post.photo
-        }
+        self.title = post.caption
+        self.postImageView.image = post.photo
     }
     
 }
