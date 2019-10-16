@@ -11,62 +11,69 @@ import UIKit
 class AddPostTableViewController: UITableViewController {
     
     // MARK: - Properties
-    
+    var selectedImage: UIImage?
     
     // MARK: - Outlets
-    @IBOutlet weak var postImageView: UIImageView!
-    @IBOutlet weak var commentTextField: UITextField!
+    @IBOutlet weak var captionTextField: UITextField!
     @IBOutlet weak var addPostButton: UIButton!
-    @IBOutlet weak var selectImageButton: UIButton!
     
     
     // MARK: - Lifecycles
     override func viewDidLoad() {
         super.viewDidLoad()
-        designButtonView()
+        designViews()
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-        postImageView.image = UIImage(named: "spaceEmptyState")
-        selectImageButton.setTitle("Select Image", for: .normal)
-        commentTextField.text = ""
+        captionTextField.text = ""
     }
     
     // MARK: - Actions
-    @IBAction func selectImageButtonTapped(_ sender: Any) {
-        selectImageButton.setTitle(nil, for: .normal)
-    }
-    
     @IBAction func cancelButtonTapped(_ sender: Any) {
         tabBarController?.selectedIndex = 0
     }
     
     @IBAction func tapGestureRecognizer(_ sender: Any) {
-        self.commentTextField.resignFirstResponder()
+        self.captionTextField.resignFirstResponder()
     }
     
     @IBAction func addPostButtonTapped(_ sender: Any) {
-        guard let postCaption = commentTextField.text,
+        guard let postCaption = captionTextField.text,
             !postCaption.isEmpty,
-            let image = postImageView.image
+            let image = selectedImage
             else { return }
-            
-            PostController.shared.createPostWith(image: image, caption: postCaption) { (_) in
-            }
+        
+        PostController.shared.createPostWith(image: image, caption: postCaption) { (post) in
+        }
         self.tabBarController?.selectedIndex = 0
     }
     
-    // MARK: - Helper Functions
-    func designButtonView() {
-        addPostButton.layer.cornerRadius = 5
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toPhotoSelectorVC" {
+            let photoSelector = segue.destination as? PhotoSelectorViewController
+            photoSelector?.delegate = self
+        }
     }
+    
+    // MARK: - Helper Functions
+    func designViews() {
+        addPostButton.layer.cornerRadius = 5
+        captionTextField.layer.cornerRadius = 0.5
+    }
+    
+}
 
+extension AddPostTableViewController: PhotoSelectorViewControllerDelegate {
+    func photoSelectorViewControllerSelected(image: UIImage) {
+        selectedImage = image
+    }
 }
 
 extension AddPostTableViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        commentTextField.resignFirstResponder()
+        captionTextField.resignFirstResponder()
         return true
     }
 }
