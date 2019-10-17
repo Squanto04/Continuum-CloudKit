@@ -29,6 +29,12 @@ class PostDetailTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateButtonDesign()
+        guard let post = post else { return }
+        PostController.shared.fetchComments(for: post) { (_) in
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
     }
     
     // MARK: - Actions
@@ -99,7 +105,7 @@ class PostDetailTableViewController: UITableViewController {
     private func updateViews() {
         guard let post = post else { return }
         self.title = post.caption
-        self.postImageView.image = post.photo
+        self.postImageView.image = post.postPhoto
     }
     
 }

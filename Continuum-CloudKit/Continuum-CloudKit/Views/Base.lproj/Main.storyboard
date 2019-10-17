@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -337,7 +338,7 @@
         <!--Post Feed-->
         <scene sceneID="eec-e0-rx2">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SgQ-TS-1KV" sceneMemberID="viewController">
+                <navigationController id="SgQ-TS-1KV" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Post Feed" id="IRc-mM-L5v">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
                     </tabBarItem>
@@ -412,6 +413,7 @@
                             <constraint firstItem="5h4-Xt-XmE" firstAttribute="width" secondItem="7g4-0F-41U" secondAttribute="width" id="vR8-Vo-JnM"/>
                             <constraint firstItem="7g4-0F-41U" firstAttribute="height" secondItem="EVd-cy-N9F" secondAttribute="height" multiplier="0.9" id="w2D-Oi-njt"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="kZ4-Rt-r6a"/>
                     </view>
                     <connections>
                         <outlet property="postImageView" destination="7g4-0F-41U" id="pOA-0Y-Cv6"/>

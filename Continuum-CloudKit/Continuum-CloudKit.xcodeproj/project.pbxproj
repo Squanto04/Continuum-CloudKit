@@ -21,6 +21,7 @@
 		35E6598023565BD800AFB66C /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E6597F23565BD800AFB66C /* PostController.swift */; };
 		35E6598423565F5800AFB66C /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E6598323565F5800AFB66C /* PostTableViewCell.swift */; };
 		35E6598623566A6E00AFB66C /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35E6598523566A6E00AFB66C /* DateExtension.swift */; };
+		35EA97C62359124800AD1662 /* SimpleAlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EA97C52359124800AD1662 /* SimpleAlertExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		35E6597F23565BD800AFB66C /* PostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostController.swift; sourceTree = "<group>"; };
 		35E6598323565F5800AFB66C /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		35E6598523566A6E00AFB66C /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		35EA97C52359124800AD1662 /* SimpleAlertExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAlertExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				35E6598523566A6E00AFB66C /* DateExtension.swift */,
+				35EA97C52359124800AD1662 /* SimpleAlertExtension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				35E6598423565F5800AFB66C /* PostTableViewCell.swift in Sources */,
 				35E659762356589B00AFB66C /* AddPostTableViewController.swift in Sources */,
 				35E6598023565BD800AFB66C /* PostController.swift in Sources */,
+				35EA97C62359124800AD1662 /* SimpleAlertExtension.swift in Sources */,
 				35E659742356581C00AFB66C /* PostDetailTableViewController.swift in Sources */,
 				35E6598623566A6E00AFB66C /* DateExtension.swift in Sources */,
 				35E659792356595900AFB66C /* Post.swift in Sources */,

@@ -26,12 +26,23 @@ class PostListTableViewController: UITableViewController {
         tableView.rowHeight = 465
 //        tableView.tableFooterView = UIView()
         searchBar.delegate = self
+        performFullSync(completion: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         tableView.reloadData()
         resultsArray = PostController.shared.posts
+    }
+    
+    // MARK: - Helper Functions
+    func performFullSync(completion:((Bool) -> Void)?) {
+        PostController.shared.fetchPosts { (posts) in
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+                completion?(posts != nil)
+            }
+        }
     }
     
     // MARK: - Table view data source
